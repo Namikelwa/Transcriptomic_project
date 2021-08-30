@@ -187,5 +187,48 @@ htseq-count -t exon -i gene_id -f bam *._hisat_sorted.bam  VectorBase-53_Agambia
 
 Differential analysis involves using read counts to perform statistical analysis to discover quantitative changes in gene expression levels between experimental groups;exposed and non-exposed.**DESeq2** is used for differential analysis. 
 
- 
 
+```
+library(DESeq2)
+library(limma)
+library(edgeR)
+library(Biobase)
+```
+Reading data into R
+```
+#reading data and storing it to a variable countdata
+countdata <- read.table("counts.txt",header=TRUE,row.names = 1)
+#converting the data to matrix
+countdata <- as.matrix(countdata)
+#assign condition
+condition <- factor(c(rep("ctrl",2),rep("exp",2)))
+#analysis with DESeq
+#create a coldata frame
+coldata <- data.frame(row.names = colnames(countdata),condition)
+```
+Creating a deseqdataset object and running Deseq
+```
+dds <- DESeqDataSetFromMatrix(countData = countdata,colData = coldata,design =~condition)
+#run DESeq pipeline
+dds <- DESeq(dds)
+```
+Dispersion Estimate plot
+```
+plotDispEsts(dds)
+# DE using edgeR
+dge <- DGEList(counts=countdata, group=condition)
+#normalize by total counts
+dge <- calcNormFactors(dge)
+# Create the contrast matrix
+design.mat <- model.matrix(~ 0 + dge$samples$group)
+colnames(design.mat) <- levels(dge$samples$group)
+# Estimate dispersion parameter for GLM
+dge <- estimateGLMCommonDisp(dge, design.mat)
+dge <- estimateGLMTrendedDisp(dge, design.mat, method="power")
+dge<- estimateGLMTagwiseDisp(dge,design.mat)
+```
+Mean Variance plot
+```
+# Plot mean-variance
+plotBCV(dge)
+```
