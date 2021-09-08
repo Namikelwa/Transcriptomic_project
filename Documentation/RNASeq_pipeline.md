@@ -234,7 +234,10 @@ plotBCV(dge)
 ```
 
 ### Results
-![image](https://drive.google.com/uc?export=view&id=11pOWq27kyCjnLqpPtinGXHs6V1bnMfmq)       
+![image](https://drive.google.com/uc?export=view&id=11pOWq27kyCjnLqpPtinGXHs6V1bnMfmq)              
+
+![image](https://drive.google.com/uc?export=view&id=1l3rE154uywWHSKxcVfGTg-tRwytRF4nx)     
+
+![image](https://drive.google.com/uc?export=view&id=1wZuwyDV6W2Ti3j8TrosLZRQaZbG28oaq)    
 
 
-![image](https://drive.google.com/uc?export=view&id=1l3rE154uywWHSKxcVfGTg-tRwytRF4nx)      
