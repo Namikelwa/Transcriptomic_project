@@ -180,7 +180,7 @@ htseq-count -t exon -i gene_id -f bam *._hisat_sorted.bam  VectorBase-53_Agambia
 ```
 ### Output
 
-![image](https://drive.google.com/uc?export=view&id=11H3sS_UR2PY0yY_tLA8MoGh_Incr3BT2)
+![image](https://drive.google.com/uc?export=view&id=11H3sS_UR2PY0yY_tLA8MoGh_Incr3BT2)  
 
 
 ## Differential analysis
@@ -234,7 +234,7 @@ plotBCV(dge)
 ```
 
 ### Results
-![image](https://drive.google.com/uc?export=view&id=11pOWq27kyCjnLqpPtinGXHs6V1bnMfmq)      
+![image](https://drive.google.com/uc?export=view&id=11pOWq27kyCjnLqpPtinGXHs6V1bnMfmq)       
 
 
-![image](https://drive.google.com/uc?export=view&id=1l3rE154uywWHSKxcVfGTg-tRwytRF4nx)    
+![image](https://drive.google.com/uc?export=view&id=1l3rE154uywWHSKxcVfGTg-tRwytRF4nx)      
