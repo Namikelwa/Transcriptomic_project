@@ -58,7 +58,7 @@ do
 done
 multiqc ./
 ```
-![image](https://drive.google.com/uc?export=view&id=1WGZUvOHSZXobBbo305dQou5cMSNdgNun) 
+![image](https://drive.google.com/uc?export=view&id=1WGZUvOHSZXobBbo305dQou5cMSNdgNun)     
 
 ## Trimming
 low quality reads together with adapters are removed after quality assessment.**Trimmomatic** is a  Java executable software used to trim and crop reads. 
@@ -81,9 +81,9 @@ HEADCROP -removes the first 11 bases of the reads
 ```
 The trimmed reads are then checked for quality.
 
-![image](https://drive.google.com/uc?export=view&id=1s2scdPc_Es-1_qPEeqv8CVPoAjPLokUb) 
+![image](https://drive.google.com/uc?export=view&id=1s2scdPc_Es-1_qPEeqv8CVPoAjPLokUb)    
 
-![image](https://drive.google.com/uc?export=view&id=1fvmBuAmgn0kgQW2bRF3ZNOyoMpxoLV9M)
+![image](https://drive.google.com/uc?export=view&id=1fvmBuAmgn0kgQW2bRF3ZNOyoMpxoLV9M)    
 
 
 ## Mapping
@@ -126,8 +126,7 @@ We choose one data set (SRR9987840) for troubleshooting.
 Use a different reference genome; VectorBase-53_AgambiaePEST_Genome.fasta.   
 The  overall alignment rate rose to 83%
 
-![image](https://drive.google.com/uc?export=view&id=1BAgqFHGlRBpc0dIsHD34AUIoPbCcH6La)
-
+![image](https://drive.google.com/uc?export=view&id=1BAgqFHGlRBpc0dIsHD34AUIoPbCcH6La)   
 
 * Step 2
 
@@ -180,7 +179,7 @@ htseq-count -t exon -i gene_id -f bam *._hisat_sorted.bam  VectorBase-53_Agambia
 ```
 ### Output
 
-![image](https://drive.google.com/uc?export=view&id=11H3sS_UR2PY0yY_tLA8MoGh_Incr3BT2)  
+![image](https://drive.google.com/uc?export=view&id=11H3sS_UR2PY0yY_tLA8MoGh_Incr3BT2)        
 
 
 ## Differential analysis
@@ -234,10 +233,11 @@ plotBCV(dge)
 ```
 
 ### Results
-![image](https://drive.google.com/uc?export=view&id=11pOWq27kyCjnLqpPtinGXHs6V1bnMfmq)              
 
-![image](https://drive.google.com/uc?export=view&id=1l3rE154uywWHSKxcVfGTg-tRwytRF4nx)     
+![image](https://drive.google.com/uc?export=view&id=11pOWq27kyCjnLqpPtinGXHs6V1bnMfmq)                  
 
-![image](https://drive.google.com/uc?export=view&id=1wZuwyDV6W2Ti3j8TrosLZRQaZbG28oaq)    
+![image](https://drive.google.com/uc?export=view&id=1l3rE154uywWHSKxcVfGTg-tRwytRF4nx)        
+
+![image](https://drive.google.com/uc?export=view&id=1wZuwyDV6W2Ti3j8TrosLZRQaZbG28oaq)       
 
 
