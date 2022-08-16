@@ -244,11 +244,14 @@ plotBCV(dge)
 
 ### Results
 
-![image](https://drive.google.com/uc?export=view&id=11pOWq27kyCjnLqpPtinGXHs6V1bnMfmq)      
+![MA plot](https://user-images.githubusercontent.com/85280529/184815552-47e6c526-cd54-4c63-9703-4da4e19fac88.PNG)
 
-![image](https://drive.google.com/uc?export=view&id=1l3rE154uywWHSKxcVfGTg-tRwytRF4nx)      
+![dispersion](https://user-images.githubusercontent.com/85280529/184815442-c8ecd61f-d250-4061-904b-e62730819c10.PNG)
 
-![image](https://drive.google.com/uc?export=view&id=1wZuwyDV6W2Ti3j8TrosLZRQaZbG28oaq)      
+![heatmap](https://user-images.githubusercontent.com/85280529/184815520-ec2dc9a9-53ba-4938-a160-bf0fe5ffed2b.PNG)
+
+![PCoA](https://user-images.githubusercontent.com/85280529/184815600-11c559ab-9db5-4b37-95c3-5a27c931c97f.PNG)
+
 
 
 
