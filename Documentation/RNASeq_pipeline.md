@@ -12,9 +12,13 @@
 * star/2.7.6a
 ## Create a conda environment & load modules
 ```
-conda create --env Anopheles
+
+conda create --name Anopheles
 conda activate Anopheles
-module load <name of the module>
+conda config --add channels conda-forge # from this step it was done after getting an error 
+conda config --set channel_priority strict
+conda install perl
+
 ```
 
 ## Fetching raw data from NCBI
